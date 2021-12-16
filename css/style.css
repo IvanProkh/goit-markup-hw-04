@@ -142,6 +142,18 @@ ul {
   color: var(--theme-color);
 }
 
+.webpost::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+
+  outline: 1px solid red;
+
+  background-image: url(../images/hover/envelope\\(hover\).svg);
+}
+
 /* =========== MAIN =========== */
 
 /* =========== Hero-section =========== */
@@ -149,13 +161,10 @@ ul {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background: var(--background-first);
+  background: #c4c4c4;
 
-  /* background: #2f303a66; */
-
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3));
-
-  /* background-image: url(../images/hero/hero-img.jpg); */
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
+    url(../images/hero/hero-img.jpg);
 }
 
 .div-hero {
@@ -235,6 +244,33 @@ ul {
   color: var(--text-secondary);
 }
 
+.list::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-color: var(--background-third);
+  border-radius: 4px;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/benefits/antenna\ 1.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/benefits/clock\ 1.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/benefits/diagram\ 1.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/benefits/astronaut\ 1.svg);
+}
 /* =========== What are we doing =========== */
 
 .about {
@@ -316,6 +352,24 @@ ul {
   font-size: 16px;
   line-height: 1.18;
   color: var(--text-secondary);
+}
+
+.masters::after {
+  content: '';
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  margin: 16px 10px 0px 32px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+  /* background-image: url(../images/masters/instagram\ 1.svg); */
+
+  border-radius: 50%;
+}
+
+.masters::after:nth-child(1) {
+  background-image: url(../images/masters/instagram\ 1.svg);
 }
 
 /* =========== FOOTER =========== */
