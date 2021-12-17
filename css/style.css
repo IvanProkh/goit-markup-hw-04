@@ -359,20 +359,36 @@ ul {
 .icons {
   display: flex;
   align-items: center;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.socials-icons {
+  height: 44px;
+  width: 44px;
+  margin-top: 16px;
+  text-align: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.socials-icons:not(:last-child) {
+  margin-right: 10px;
 }
 
 .link-icon {
-  height: 44px;
-  width: 44px;
   padding: 0;
   border: none;
 }
 
-.icon-instagram {
+.social {
   height: 20px;
   width: 20px;
+}
 
-  border-radius: 50%;
+.socials-icons:hover,
+.socials-icons:focus {
+  background-color: var(--theme-color);
 }
 
 /* =========== CLIENTS =========== */
