@@ -257,30 +257,15 @@ ul {
 
 .icon-antenna {
   display: flex;
-  justify-content: space-between;
   padding: 25px 100px;
   height: 120px;
-  /* width: 270px; */
+  width: 270px;
+
   background-color: var(--background-third);
   border-radius: 4px;
   margin-bottom: 30px;
 }
 
-/* .icon-antenna::before {
-  background-image: url(../images/benefits/antenna\ 1.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/benefits/clock\ 1.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/benefits/diagram\ 1.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/benefits/astronaut\ 1.svg);
-} */
 /* =========== What are we doing =========== */
 
 .about {
@@ -372,19 +357,19 @@ ul {
 }
 
 .link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   border: none;
   height: 44px;
   width: 44px;
   margin-top: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   border-radius: 50%;
 }
 
-.link-icon:not(:last-child) {
+.socials-icons:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -410,9 +395,12 @@ ul {
 /* =========== CLIENTS =========== */
 
 .clients-div {
+  padding-top: 94px;
 }
 
 .title-clients {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
@@ -422,8 +410,15 @@ ul {
   color: #212121;
 }
 
-.client {
-  display: inline-block;
+.clients {
+  display: flex;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16 32;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -434,9 +429,24 @@ ul {
   margin-right: 30px;
 }
 
+.client-logo {
+  fill: #afb1b8;
+}
+
+.client-link:hover .client-logo,
+.client-link:focus .client-logo {
+  fill: var(--theme-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--theme-color);
+}
+
 /* =========== FOOTER =========== */
 
 .footer-section {
+  display: flex;
   padding: 60px 0px;
   background: var(--background-first);
 }
